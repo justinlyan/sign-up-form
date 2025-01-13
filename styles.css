@@ -9,12 +9,12 @@ body {
 
 @font-face {
   font-family: 'Norse-Bold';
-  src: url('/Norse-Bold.otf');
+  src: url('./assets/Norse-Bold.otf');
 }
 
 .header {
   flex: 1;
-  background-image: url(./plants.avif);
+  background-image: url(./assets/plants.avif);
   background-size: cover;
   height: 100vh;
   color: white;
