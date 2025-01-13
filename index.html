@@ -7,38 +7,49 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Sign-up Form</h1>
-  <div class="form-header">
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started</p>
-    <p>You <i>know</i> you want to.</p>
+  <div class="header">
+    <h1><img src="odin-lined.png" alt="Odin logo">Sign-up Form</h1>
   </div>
-  <form action="" method="get" id="signup-form">
-    <h2>Let's do this!</h2>
-    <div class="form-element">
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="first-name">
+  <div class="main">
+    <div class="form-header">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started</p>
+      <p>You <i>know</i> you want to.</p>
     </div>
-    <div class="form-element">
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name">
-    </div>
-    <div class="form-element">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
-    </div>
-    <div class="form-element">
-      <label for="phone-number">Phone Number</label>
-      <input type="number" id="phone-number" name="phone-number">
-    </div>
-    <div class="form-element">
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password">
-    </div>
-    <div class="form-element">
-      <label for="password">Confirm Password</label>
-      <input type="password" id="password" name="password">
-    </div>
-  </form>
-  <input type="submit" form="signup-form">
+    <form action="" method="get" id="signup-form">
+      <h2>Let's do this!</h2>
+      <div class="form-row">
+        <div class="form-element">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-element">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-element">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-element">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="number" id="phone-number" name="phone-number">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-element">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="form-element">
+          <label for="password">CONFIRM PASSWORD</label>
+          <input type="password" id="password" name="password">
+        </div>
+      </div>
+    </form>
+    <input class="submit" type="submit" form="signup-form" value="Create Account">
+    <p>Already have an account? </p>
+  </div>
 </body>
 </html>

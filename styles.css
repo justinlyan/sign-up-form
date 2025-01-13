@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('/Norse-Bold.otf');
+}
+
+.header {
+  flex: 1;
+  background-image: url(./plants.avif);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-family: 'Norse-Bold';
+  font-size: 3rem;
+}
+
+img {
+  height: 1em;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  
+}
+
+.main {
+  flex: 3;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row:first-child {
+  margin-right: 30px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px 30px;
+}
+
+.submit {
+  background-color: #596D48;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+}
