@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+}
+
 body {
   display: flex;
-  margin: 0;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -14,8 +18,8 @@ body {
   background-size: cover;
   height: 100vh;
   color: white;
-  font-family: 'Norse-Bold';
   font-size: 3rem;
+  position: relative;
 }
 
 img {
@@ -24,11 +28,41 @@ img {
 
 h1 {
   background-color: rgba(0, 0, 0, 0.6);
-  
+  margin-top: 200px;
+  text-align: center;
+  font-family: 'Norse-Bold';
+}
+
+.header p {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.header a:visited {
+  color: white;
 }
 
 .main {
   flex: 3;
+}
+
+.form-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: rgb(246, 246, 246);
+  padding: 100px 50px 50px 0px;
+}
+
+.form-header p {
+  width: 75%;
+}
+
+.form-header p:nth-child(2) {
+  margin-top: 20px;
 }
 
 .form-row {
@@ -43,7 +77,18 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+.form-element, 
+h2,
+p,
+.submit {
   margin: 10px 30px;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .submit {
@@ -51,4 +96,13 @@ h1 {
   border-radius: 5px;
   color: white;
   padding: 10px 30px;
+  font-weight: bold;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+input:invalid {
+  border-color: red;
 }

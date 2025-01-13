@@ -9,6 +9,7 @@
 <body>
   <div class="header">
     <h1><img src="odin-lined.png" alt="Odin logo">Sign-up Form</h1>
+    <p class="photo-desc">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
   </div>
   <div class="main">
     <div class="form-header">
@@ -20,36 +21,36 @@
       <div class="form-row">
         <div class="form-element">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name">
+          <input type="text" id="first-name" name="first-name" required>
         </div>
         <div class="form-element">
           <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name">
+          <input type="text" id="last-name" name="last-name" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-element">
           <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-element">
           <label for="phone-number">PHONE NUMBER</label>
-          <input type="number" id="phone-number" name="phone-number">
+          <input type="number" id="phone-number" name="phone-number" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-element">
           <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" minlength="8" required>
         </div>
         <div class="form-element">
           <label for="password">CONFIRM PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" minlength="8" required>
         </div>
       </div>
     </form>
     <input class="submit" type="submit" form="signup-form" value="Create Account">
-    <p>Already have an account? </p>
+    <p>Already have an account? <a href="">Log in</a></p>
   </div>
 </body>
 </html>
